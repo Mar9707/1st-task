@@ -74,7 +74,7 @@ function PostRequest(req, res) {
 
         const uploadedFile = files.file;
 
-        if (!uploadedFile || !uploadedFile.path) { // Проверяем, что uploadedFile и uploadedFile.path определены
+        if (!uploadedFile || !uploadedFile.path) {
             res.writeHead(400, { 'Content-Type': 'text/plain' });
             res.end('No file uploaded');
             return;
