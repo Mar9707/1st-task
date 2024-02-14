@@ -121,7 +121,7 @@ function handleDeleteRequest(req, res) {
 
 
 function createPath(page) {
-	return path.resolve(__dirname, 'views', `${page}.html`);
+	return path.resolve(__dirname, `${page}.html`);
 }
 
 
